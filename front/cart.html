@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=66434666321&text=Hola%21%20Bienvenido%20a%20He-man%20wsp." class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
+    
+    <header class="main-header">
+      <div class="header-wrap">
+        <a href="#"><img src="./img/iconos/sodapdf-converted (1).png" alt="Logo" id="logo"></a>
+        <div class="wrap-nav-header">
+        <nav class="nav-header">
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+          <i class="toggle-menu">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDM4NCAzODQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTM2OCAxNTQuNjY3OTY5aC0zNTJjLTguODMyMDMxIDAtMTYtNy4xNjc5NjktMTYtMTZzNy4xNjc5NjktMTYgMTYtMTZoMzUyYzguODMyMDMxIDAgMTYgNy4xNjc5NjkgMTYgMTZzLTcuMTY3OTY5IDE2LTE2IDE2em0wIDAiIGZpbGw9IiMwMDAwMDAiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiPjwvcGF0aD48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im0zNjggMzJoLTM1MmMtOC44MzIwMzEgMC0xNi03LjE2Nzk2OS0xNi0xNnM3LjE2Nzk2OS0xNiAxNi0xNmgzNTJjOC44MzIwMzEgMCAxNiA3LjE2Nzk2OSAxNiAxNnMtNy4xNjc5NjkgMTYtMTYgMTZ6bTAgMCIgZmlsbD0iIzAwMDAwMCIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCI+PC9wYXRoPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTM2OCAyNzcuMzMyMDMxaC0zNTJjLTguODMyMDMxIDAtMTYtNy4xNjc5NjktMTYtMTZzNy4xNjc5NjktMTYgMTYtMTZoMzUyYzguODMyMDMxIDAgMTYgNy4xNjc5NjkgMTYgMTZzLTcuMTY3OTY5IDE2LTE2IDE2em0wIDAiIGZpbGw9IiMwMDAwMDAiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiPjwvcGF0aD48L2c+PC9zdmc+" />
+          </i>
+          </label>
+          <ul class="main-menu">
+          <li class="menu-item"><a href="./index.html">Tienda</a></li>
+          <li class="menu-item"><a href="Nosotros.html">Nosotros</a></li>
+          <li class="menu-item"><a id="nav-main-contact" href="contacto.html">Contacto</a></li>
+          
+          <div class="carrito">
+            <li class="cuenta-carrito"><a href="./cart.html" id="cart"><img src="./img/iconos/icons8-fast-cart-64.png" alt=""><span id="cuenta-carrito">0</span></a></li>
+          </div>
+          </ul>
+          
+        </nav>
+        </div>
+      </div>
+      </header>
+    
+    <main>
+      <p id="carrito-vacio">Ups! El carrito está vacío, <a href="./index.html">elige algunos productos</a></p>
+      <section id="cart-container"></section>
+      <section id="totales">
+          
+        <p>Total unidades: <span id="quantity">1</span></p>
+        <p>Total precio: $<span id="unit-price">1</span></p>
+        
+        <div class="botones">
+          <button id="checkout-btn">Checkout</button>
+        <button id="reiniciar">Reiniciar</button>
+        </div>
+      </section>
+    </main>
+    
+    <div id="button-checkout"></div>
+
+    <footer class="pie-pagina">
+      <div class="grupo-1">
+        <div class="box">
+          <figure>
+            <a href="#">
+              <img  src="img/iconos/sodapdf-converted (1).png" alt="heman-logo">
+            </a>
+          </figure>
+        </div>
+        <div class="box">
+          <h2>CONFIGURACION DE LA TIENDA</h2>
+          <p><span class="material-symbols-outlined">  call </span> Telefono: 5434234652347</p>
+          <p><span class="material-symbols-outlined">  mail </span> Correo: HeManbeers1981@gmail.com</p>
+          
+        </div>
+        <div class="box">
+          <h2>SIGUENOS</h2>
+          <div class="red-social">
+            <a href="https://www.facebook.com/profile.php?id=61552037812382" target="_blank" class="fab fa-facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank" class="fab fa-instagram"></a>
+            <a href="https://twitter.com/?lang=es" target="_blank" class="fab fa-twitter"></a>
+          </div>
+        </div>
+      </div>
+      <div class="grupo-2">
+        <small>&copy; 2023 <b>He-man</b> - Derechos Reservados.</small>
+      </div>
+      </footer>
+
+    <script src="./js/indexmercado.js"></script>
+    <script src="js/productoService.js"></script>
+    <script src="js/cartService.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>
