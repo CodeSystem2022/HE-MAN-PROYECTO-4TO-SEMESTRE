@@ -1,0 +1,82 @@
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.titulo {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el formulario de contacto */
+.formulario {
+    width: 50%;
+    float: right;
+    margin: 0 auto; /* Agrega esto para centrar horizontalmente el formulario */
+    text-align: left; /* Alinea el texto del formulario a la izquierda */
+}
+
+#form {
+    margin: 20px 0;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #25d366;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+input[type="submit"]:hover {
+    background-color: #128c7e;
+}
+
+/* Enlace para enviar correo */
+#emailIA {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: blue;
+}
+
+@media (max-width: 400px) {
+    h4{
+        font-size: 15px;
+    }
+  }
