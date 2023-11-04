@@ -1,0 +1,50 @@
+
+h1{
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.image1{
+    float: right;
+    width: 300px;
+    height: auto;
+    border: 1px double white;
+}
+
+
+.image2{
+    float: left;
+    width: 300px;
+    height: auto;
+    border: 1px double white;
+    margin-bottom: 40px;
+    
+}
+
+.texto{
+    text-indent: 20px;
+    padding: 105px;
+    font-family: cursive;
+}
+.parrafo::first-letter{
+    font-size: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    color: #B8791F;
+}
+
+
+@media screen and (max-width: 768px) {
+    .texto {
+        text-indent: 10px;
+        padding: 20px;
+    }
+
+    .image1, .image2 {
+        float: none;
+        width: 100%;
+    }
+   
+    footer{
+        margin: 0;
+    }
+}
