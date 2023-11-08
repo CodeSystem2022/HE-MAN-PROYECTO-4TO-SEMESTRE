@@ -1,6 +1,6 @@
 const contenedorTarjetas = document.getElementById("productos-container");
 
-/** Crea las tarjetas de productos teniendo en cuenta la lista en cervezas.js */
+/** Creamos las tarjetas de productos teniendo en cuenta la lista de cervezas.js */
 function crearTarjetasProductosInicio(productos){
   contenedorTarjetas.innerHTML = '';
   productos.forEach(producto => {
@@ -19,7 +19,7 @@ function crearTarjetasProductosInicio(productos){
 
 
 
-// Filtrar productos por categoría
+// Filtramos los productos por categoría
 function filtrarProductosPorCategoria(categoria) {
   const tarjetasProductos = document.querySelectorAll(".tarjeta-producto");
   tarjetasProductos.forEach(tarjeta => {
@@ -31,11 +31,11 @@ function filtrarProductosPorCategoria(categoria) {
   });
 }
 
-// Obtén la lista completa de cervezas y crea las tarjetas de productos iniciales
+// Lista completa de cervezas y creamos las tarjetas de productos iniciales
 getCervezas().then(cervezas => {
   crearTarjetasProductosInicio(cervezas);
 
-  // Agregar eventos de clic a botones de filtro (por ejemplo, categoría "Andes")
+  // Agregamos eventos de click a botones de filtro (por ejemplo, categoría "Andes")
   document.getElementById("andes").addEventListener("click", () => {
     filtrarProductosPorCategoria("Andes");
   });
