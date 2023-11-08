@@ -83,5 +83,54 @@
   
 </table>
 
+<pre>INSTRUCCIONES PARA LA EJECUCION DE LA PAGINA</pre> 
+
+h1>Clonar el repositorio:</h1>
+    <ol>
+        <li>Abre la terminal en tu computadora.</li>
+        <li>Navega al directorio donde deseas clonar el repositorio.</li>
+        <li>Ejecuta el siguiente comando para clonar el repositorio desde GitHub:
+            <pre><code>git clone https://github.com/CodeSystem2022/HE-MAN-PROYECTO-4TO-SEMESTRE.git</code></pre>
+        </li>
+    </ol>
+
+  <h1>Instalar las dependencias:</h1>
+    <ol>
+        <li>Asegúrate de tener Node.js instalado en tu computadora.</li>
+        <li>Navega al directorio raíz del repositorio clonado en la terminal.</li>
+        <li>Ejecuta el siguiente comando para instalar las dependencias:
+            <pre><code>npm install</code></pre>
+            Esto instalará todas las dependencias necesarias definidas en tu archivo <code>package.json</code>.
+        </li>
+    </ol>
+
+  <h1>Configurar las variables de entorno:</h1>
+    <ol>
+        <li>Crea un archivo <code>.env</code> en el directorio raíz del proyecto y configura las variables de entorno necesarias. Debes proporcionar los valores adecuados para las variables <code>host</code>, <code>database</code>, <code>user</code>, y <code>password</code> utilizadas para la conexión a la base de datos. También, asegúrate de proporcionar el token de acceso de MercadoPago si es necesario.
+            <pre><code>host=URL_DE_TU_BD</code></pre>
+            <pre><code>database=NOMBRE_DE_LA_BD</code></pre>
+            <pre><code>user=USUARIO_DE_LA_BD</code></pre>
+            <pre><code>password=CONTRASEÑA_DE_LA_BD</code></pre>
+        </li>
+    </ol>
+
+   <h1>Ejecutar la aplicación:</h1>
+    <ol>
+        <li>Una vez que las dependencias estén instaladas y las variables de entorno estén configuradas, puedes ejecutar la aplicación.</li>
+        <li>Ejecuta el siguiente comando:
+            <pre><code>npm start</code></pre>
+            Esto iniciará el servidor y la aplicación estará disponible en <a href="http://localhost:8080" target="_blank">http://localhost:8080</a>. Puedes acceder a ella desde un navegador web.
+        </li>
+    </ol>
+
+  <h1>Uso de la aplicación:</h1>
+    <ol>
+        <li>Abre un navegador web y accede a <a href="http://localhost:8080" target="_blank">http://localhost:8080</a> para usar la aplicación.</li>
+        <li>Puedes explorar los productos, agregarlos al carrito y realizar pruebas de compra con MercadoPago.</li>
+    </ol>
+
+  <h1>Finalización:</h1>
+    <p>Cuando hayas terminado de usar la aplicación, puedes detenerla en la terminal presionando Ctrl + C.</p>
+
    
 
