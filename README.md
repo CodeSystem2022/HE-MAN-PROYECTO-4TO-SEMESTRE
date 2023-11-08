@@ -2,7 +2,7 @@
   #HE-MAN E-COMMERCE <br>
 
   <div>
-    <img src="https://raw.githubusercontent.com/MatiasMichaux98/ecomercedos/master/E-Heman/front/img/fotor-ai-2023110713045.jpg" alt="">
+    <img src="https://raw.githubusercontent.com/MatiasMichaux98/ecomercedos/master/E-Heman/front/img/fotor-ai-2023110713029.jpg" alt="">
   </div>
   
   <table>
@@ -62,6 +62,26 @@
       <span style="display: inline;">MYSQL</span>
     </td>
   </tr>
+
+  <tr>
+    <td>HERRAMIENTAS</td>
+  </tr>
+
+  <tr>
+    <td>
+      <img src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/git/git-original-wordmark.svg" width="60" height="60">
+      <span style="display: inline;">Git Bash</span>
+         
+   </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://raw.githubusercontent.com/patrickpiccini/devicons/687ea87f66801c164da6793be2de9e95e4e20ca8/icons/dark/Postman.svg" width="60" height="60">
+      <span style="display: inline;">Postman</span>
+    </td>
+  </tr>
+  
 </table>
+
    
 
